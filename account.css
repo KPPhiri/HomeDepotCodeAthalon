@@ -1,0 +1,36 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 50px;
+}
+.contain {
+    width: 60vw;
+    padding: 20px;
+    display: block;
+    margin-bottom: 80px;
+    background-color: #F5AA7C;
+}
+.line {
+    text-align: right;
+}
+.info {
+    margin-top: 40px;
+}
+.row {
+    margin-top: 20px;
+}
+.delBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.navbar {
+    background-color: #F18D51;
+}
+#profilePic{
+    height: 150px;
+    width: 150px;
+}
