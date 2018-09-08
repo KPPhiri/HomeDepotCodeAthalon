@@ -12,9 +12,14 @@ function addNavBarListeners() {
 
 }
 
-
 addNavBarListeners()
 document.querySelector('#enter-btn').addEventListener('click', ()=> {
-		console.log("WORKINGG")
 		window.location.href = 'survey.html';
+		// var text = document.querySelector('#code');
+		// document.getElementById("code").innerHTML ="hi"
+		console.log("FKSDLFSJFSDLK")
+		// firebaseRef.child("text").set(text);
 	});
+
+
+
