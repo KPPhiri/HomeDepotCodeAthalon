@@ -1,7 +1,4 @@
 function addNavBarListeners() {
-	document.querySelector('#back-navBtn').addEventListener('click', ()=> {
-		window.location.href = 'index.html';});
-
 	document.querySelector('#survey-navBtn').addEventListener('click', ()=> {
 		window.location.href = 'survey.html';});
 	
@@ -12,6 +9,12 @@ function addNavBarListeners() {
 	document.querySelector('#account-navBtn').addEventListener('click', ()=> {
 		window.location.href = 'account.html';
 	});
+
 }
 
+
 addNavBarListeners()
+document.querySelector('#enter-btn').addEventListener('click', ()=> {
+		console.log("WORKINGG")
+		window.location.href = 'survey.html';
+	});
