@@ -1,15 +1,13 @@
-.profile {
-    display: flex;
-    justify-content: center;
-    height: 80vh;
-    margin-top: 50px;
-}
+
 .contain {
     width: 60vw;
     padding: 20px;
     display: block;
     margin-bottom: 80px;
     background-color: #F5AA7C;
+    /* outline: 4px solid #967D6E; */
+    border: 4px solid #967D6E;
+    border-radius: 4px;
 }
 .line {
     text-align: right;
@@ -20,12 +18,20 @@
 .row {
     margin-top: 20px;
 }
-.delBtn {
+.btn-del {
     position: absolute;
     bottom: 0;
     left: 0;
     margin-left: 20px;
     margin-bottom: 20px;
+    background-color: #474747;
+    color: white;
+}
+
+.btn-edit {
+    margin-left: 20px;
+    color: white;
+    background-color: #C27749;
 }
 
 #profilePic{
