@@ -1,4 +1,7 @@
 function addNavBarListeners() {
+	document.querySelector('#back-navBtn').addEventListener('click', ()=> {
+		window.location.href = 'index.html';});
+	
 	document.querySelector('#survey-navBtn').addEventListener('click', ()=> {
 		window.location.href = 'survey.html';});
 	
