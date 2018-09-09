@@ -31,10 +31,9 @@ function addRadioBtnListeners1(q) {
       questionAnswers[0] = val;
       for(var k = 0; k < questionAnswers.length; k++) {
         total += questionAnswers[k];
-        console.log("TOTAL IS: " + total);
+        
       }
-      console.log("total: " + total + " nonZero: " + nonZero + " index: " + parseInt(((total/nonZero)), 10));
-      console.log("IMAGE IS: " + document.querySelector('#char'));
+      console.log("TOTAL IS: " + total);
       document.querySelector('#char').src = userSatisfaction[parseInt(((total/nonZero))-1, 10)]
       }
     }
