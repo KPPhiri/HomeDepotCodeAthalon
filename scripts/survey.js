@@ -14,30 +14,39 @@ function addNavBarListeners() {
    });
 }
 
-function addRadioBtnListeners() {
-  var radioButtons = document.getElementsByName("exampleRadios");
-   
-  for ( var i = 0; i < 4; i++) {
-    radioButtons[i].onclick = changeCharTemp
-    
-   }
-}
-var prev = 0;
-var tries = 1;
 var nonZero = 0;
-var userSatisfaction = ["./../imgs/homeb0.png", './../imgs/homeb2.png', './../imgs/homeb3.png', './../imgs/homeb4.png'];
-var questionAnswers = [0,0,0,0];
-function changeCharTemp(i) {
-  var total = 0;
-   val  = Number(document.querySelector('input[name = "exampleRadios"]:checked').value);
-   if(questionAnswers[i]== 0){
-    nonZero++;
-   }
-   questionAnswers[i] = val;
-   for(int i = 0; i < questionAnswers.length; i++) {
-    totral += questionAnswers[i];
-   }
-    document.querySelector('#char').src = userSatisfaction[parseInt(((total/tries)-1), 10)]
-}
+var userSatisfaction = ["./../imgs/homeb1.png", './../imgs/homeb2.png', './../imgs/homeb3.png', './../imgs/homeb4.png', './../imgs/homeb5.png'];
+var questionAnswers = [0,0,0,0,0,0,0];
+
+
+function addRadioBtnListeners1(q) {
+    var radioButtons = document.getElementsByName(q);
+    for (var i = 0; i < 5; i++) {
+      radioButtons[i].onclick = function() {
+      var total = 0;
+      var val  = Number(document.querySelector('input[name = "'+q+'"]:checked').value);
+      if(questionAnswers[0]== 0){
+        nonZero++;
+      }
+      questionAnswers[0] = val;
+      for(var k = 0; k < questionAnswers.length; k++) {
+        total += questionAnswers[k];
+        console.log("TOTAL IS: " + total);
+      }
+      console.log("total: " + total + " nonZero: " + nonZero + " index: " + parseInt(((total/nonZero)), 10));
+      document.querySelector('#char').src = userSatisfaction[parseInt(((total/nonZero))-1, 10)]
+      }
+    }
+
+  }
+
+    document.querySelector('#submit').addEventListener('click', ()=> {
+      window.location.href = 'coupons.html';
+   });
+
+
+
 addNavBarListeners();
-addRadioBtnListeners();
+for (var i = 1; i < 8; i++) {
+  addRadioBtnListeners1("q" + i);
+}
