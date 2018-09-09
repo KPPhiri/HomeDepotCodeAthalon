@@ -37,7 +37,7 @@ function addRadioBtnListeners1(q) {
         console.log("TOTAL IS: " + total);
         console.log("Array: " + questionAnswers)
         console.log("Average is: " + (Math.round((total/nonZero))-1));
-        document.querySelector('#char').src = userSatisfaction[(Math.round((total/nonZero))-1)]
+        document.querySelector('#char').src = userSatisfaction[(Math.round((total/nonZero)-.9))]
     }
     }
 
