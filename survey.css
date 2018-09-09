@@ -143,6 +143,7 @@ span {
     position: absolute;
     right:225px;
     top: 480px;
+    visibility: hidden;
 }
 .tiny-speech-bubble {
 	position: relative;

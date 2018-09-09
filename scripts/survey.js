@@ -42,8 +42,28 @@ function addRadioBtnListeners1(q) {
   }
 
     document.querySelector('#submit').addEventListener('click', ()=> {
+      document.querySelector('#gift').style.visibility = "visible";
+      document.querySelector('.reward').style.visibility = "visible";
+ 
+
+   });
+
+    document.querySelector('#ok').addEventListener('click', ()=> {
+
       window.location.href = 'coupons.html';
    });
+
+    document.querySelector('.tiny-bubble').addEventListener('click', ()=> {
+      if(document.querySelector('.bubble').style.visibility == "visible") {
+            document.querySelector('.bubble').style.visibility = "hidden";
+
+      } else {
+            document.querySelector('.bubble').style.visibility = "visible";
+
+      }
+
+   });
+
 
 
 
