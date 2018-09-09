@@ -1,20 +1,22 @@
-.panel p {  color:#FFFFFF; font-size:14px; margin-bottom:30px; line-height:24px; }
+/*.panel p {  color:#FFFFFF; font-size:14px; margin-bottom:20px; line-height:24px; }*/
 
 .panel h1 {
     color: #FFFFFF;
+    margin-bottom:20px;
+    text-align: center;
 }
 
 .main-div {
     background: #F18D51 none repeat scroll 0 0;
-    border-radius: 2px;
-    margin: 10px auto 30px;
+    border-radius: 30px;
+    margin: 40px auto 30px;
     max-width: 38%;
-    padding: 50px 70px 70px 71px;
+    padding: 50px 60px 30px 61px;
 }
 .login-form .form-group {
   margin-bottom:10px;
 }
-.login-form{ text-align:center;}
+.form-group{ text-align:left;}
 
 .login-form  .submit-btn {
   background: #f0ad4e none repeat scroll 0 0;
@@ -30,5 +32,25 @@
 .login-form .submit-btn.reset {
   background: #ff9900 none repeat scroll 0 0;
 }
-.back { text-align: left; margin-top:10px;}
-.back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+.form-submit {
+  margin-top: -25px;
+  text-align: right;
+}
+
+.form-check-label {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.forgot-pass {
+  text-align: center;
+  padding-top: 40px;
+  color: #696969;
+}
+
+.register {
+  text-align: right;
+  margin-top: -48px;
+  color: #696969;
+}
