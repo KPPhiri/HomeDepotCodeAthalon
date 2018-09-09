@@ -1,8 +1,9 @@
 
 .code {
     margin-top: 200px;
-    background:#967D6E;
+    background-color: rgba(150, 125, 110, 0.7);;
     padding-top: 8px;
+    border-radius: 6px;
 }
 #recepit-code {
     width: 350px;
