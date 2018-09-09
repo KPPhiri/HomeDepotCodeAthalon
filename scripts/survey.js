@@ -20,22 +20,25 @@ var questionAnswers = [0,0,0,0,0,0,0];
 
 
 function addRadioBtnListeners1(q) {
-    var radioButtons = document.getElementsByName(q);
+    var radioButtons = document.getElementsByName("q" + q);
     for (var i = 0; i < 5; i++) {
       radioButtons[i].onclick = function() {
-      var total = 0;
-      var val  = Number(document.querySelector('input[name = "'+q+'"]:checked').value);
-      if(questionAnswers[0]== 0){
-        nonZero++;
-      }
-      questionAnswers[0] = val;
-      for(var k = 0; k < questionAnswers.length; k++) {
-        total += questionAnswers[k];
-        
-      }
-      console.log("TOTAL IS: " + total);
-      document.querySelector('#char').src = userSatisfaction[parseInt(((total/nonZero))-1, 10)]
-      }
+        var total = 0;
+        var val  = Number(document.querySelector('input[name = "'+ "q" + q+'"]:checked').value);
+        console.log("getting: " + (q-1));
+        if(questionAnswers[q-1]== 0){
+          nonZero++;
+        }
+        questionAnswers[q-1] = val;
+        for(var k = 0; k < questionAnswers.length; k++) {
+          total += questionAnswers[k];
+          
+        }
+        console.log("TOTAL IS: " + total);
+        console.log("Array: " + questionAnswers)
+        console.log("Average is: " + (Math.round((total/nonZero))-1));
+        document.querySelector('#char').src = userSatisfaction[(Math.round((total/nonZero))-1)]
+    }
     }
 
   }
@@ -68,5 +71,5 @@ function addRadioBtnListeners1(q) {
 
 addNavBarListeners();
 for (var i = 1; i < 8; i++) {
-  addRadioBtnListeners1("q" + i);
+  addRadioBtnListeners1(i);
 }
