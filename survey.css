@@ -1,11 +1,102 @@
-.container {
+h4 {
+    font-size: 20px;
+}
+.left-side {
     background: #FDF1E9;
     padding: 10px;
+    margin-left: 30px;
+    margin-right: 0;
 }
 .btn-submit {
     background-color: #CC9979;
 }
+.giftBox {
+    position: absolute;
+    left: 550px;
+    bottom: -80px;
+    text-align: center;
+    visibility: hidden;
 
+}
+#gift {
+    width: 200px;
+    height: 200px;
+}
+.reward {
+    background-color: #97D687;
+    padding: 10px;
+    border-radius: 10px;
+    width: 380px;
+    position: absolute;
+    left: 470px;
+    bottom: 200px;
+    text-align: center;
+    visibility: hidden;
+    z-index: 3;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    padding: 0;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #F5AA7C;
+	border-radius: .4em;
+    width: 280px;
+    height: 200px;
+    padding: 20px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 20px;
+	height: 0;
+	border: 40px solid transparent;
+	border-left-color: #F5AA7C;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -20px;
+	margin-right: -40px;
+}
+.bubble {
+    position: absolute;
+    right:225px;
+    top: 340px;
+}
+.tiny-speech-bubble {
+	position: relative;
+	background: #C27749;
+	border-radius: .4em;
+    width: 30px;
+    height: 20px;
+    padding: 12px;
+}
+
+.tiny-speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 20px;
+	height: 0;
+	border: 10px solid transparent;
+	border-left-color: #C27749;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -5px;
+	margin-right: -18px;
+}
+.tiny-speech-bubble p {
+    position: absolute;
+    top: -3px;
+    left: 8px;
+}
 .radio-btn {
     padding-left: 20px;
     padding-right: 30px;
