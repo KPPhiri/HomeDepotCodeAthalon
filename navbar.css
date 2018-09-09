@@ -11,3 +11,10 @@ ul.nav > li > a:hover {
 
 	border-radius: 4px;
 }
+.btn-acct {
+    border-radius: 10px;
+}
+#acct-pro {
+    width:40px;
+    height: 30px;
+}
