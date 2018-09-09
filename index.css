@@ -1,7 +1,11 @@
+
 .code {
     margin-top: 200px;
+    background:#967D6E;
+    padding-top: 8px;
 }
 #recepit-code {
     width: 350px;
     text-align: center;
+    margin-right: 10px;
 }
