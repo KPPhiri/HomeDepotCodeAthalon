@@ -1,22 +1,23 @@
-
 .contain {
-    width: 60vw;
-    padding: 20px;
+    margin-top: 20px;
+    width: 70vw;
+    padding: 40px;
     display: block;
     margin-bottom: 80px;
     background-color: #F5AA7C;
     /* outline: 4px solid #967D6E; */
-    border: 4px solid #967D6E;
+    /* border: 4px solid #967D6E; */
     border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .line {
     text-align: right;
 }
 .info {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .row {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .btn-del {
     position: absolute;
@@ -33,9 +34,26 @@
     color: white;
     background-color: #C27749;
 }
-
-#profilePic{
-    height: 150px;
-    width: 150px;
+#profilePic {
+    background-color: white;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
 }
+#bear-pic{
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    height: 72px;
+    width: 75px;
+    border-radius: 10px;
 
+}
+#user {
+    margin-top: 8px;
+}
+#acct-pro {
+    width:30px;
+    height: 30px;
+}
