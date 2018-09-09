@@ -69,6 +69,9 @@ function addRadioBtnListeners1(q) {
 
 
 
+
+
+
 addNavBarListeners();
 for (var i = 1; i < 8; i++) {
   addRadioBtnListeners1(i);
