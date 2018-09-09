@@ -11,3 +11,52 @@
     text-align: center;
     margin-right: 10px;
 }
+.bg-design {
+    z-index: -1;
+}
+.square {
+    position: relative;
+    left:0;
+    bottom:0;
+    width: 100px;
+    height: 100px;
+
+}
+.o {
+    background-color: #EDE5DF;
+    left:-50px;
+    bottom:10px;
+    transform: rotate(45deg);
+}
+.or {
+    background-color: #F18D51;
+    left:10px;
+    bottom:-6px;
+    transform: rotate(45deg);
+}
+.ora {
+    background-color: #C27749;
+    left:-600px;
+    bottom:-222px;
+    transform: rotate(45deg);
+}
+.oran {
+    background-color: #F5AA7C;
+    left:-670px;
+    bottom:0px;
+    transform: rotate(45deg);
+}
+.orang {
+    position: absolute;
+    background-color: #97D687;
+    left:90px;
+    bottom:52px;
+    transform: rotate(45deg);
+}
+.orange {
+    position: absolute;
+    background-color: #388048;
+    left:935px;
+    bottom:445px;
+    transform: rotate(45deg);
+}
