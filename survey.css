@@ -134,6 +134,8 @@ h4 {
     position: absolute;
     right:225px;
     top: 340px;
+    visibility: hidden;
+
 }
 .tiny-speech-bubble {
 	position: relative;
