@@ -15,7 +15,7 @@ function addNavBarListeners() {
 }
 
 var nonZero = 0;
-var userSatisfaction = ["./../imgs/homeb0.png", './../imgs/homeb2.png', './../imgs/homeb3.png', './../imgs/homeb4.png', './../imgs/homeb5.png'];
+var userSatisfaction = ["./../imgs/homeb1.png", './../imgs/homeb2.png', './../imgs/homeb3.png', './../imgs/homeb4.png', './../imgs/homeb5.png'];
 var questionAnswers = [0,0,0,0,0,0,0];
 
 
@@ -39,6 +39,10 @@ function addRadioBtnListeners1(q) {
     }
 
   }
+
+    document.querySelector('#submit').addEventListener('click', ()=> {
+      window.location.href = 'coupons.html';
+   });
 
 
 
