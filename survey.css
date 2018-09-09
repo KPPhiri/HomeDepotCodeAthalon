@@ -97,13 +97,6 @@ h4 {
     top: -3px;
     left: 8px;
 }
-
-/* .reward:hover .move-right{
-    transform: translate(350px,0);
-    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
-    -o-transform: translate(350px,0); /** Opera **/
-    -moz-transform: translate(350px,0); /** Firefox **/
-} */
 .radio-btn {
     padding-left: 20px;
     padding-right: 30px;
