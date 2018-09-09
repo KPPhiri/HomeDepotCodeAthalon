@@ -309,11 +309,7 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-$(document).ready(function(){
-    $(window).scroll(function(){
-        $(".form-check").css("opacity", 1 - $(window).scrollTop() / $('.form-check').height());
-    });
-});
+
 </script>
 
 </html>
