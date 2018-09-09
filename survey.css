@@ -5,3 +5,11 @@
 .btn-submit {
     background-color: #CC9979;
 }
+
+.radio-btn {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform:scale(2);
+}
