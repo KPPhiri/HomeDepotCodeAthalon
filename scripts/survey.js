@@ -26,6 +26,7 @@ var prev = 0;
 var total = 0;
 var tries = 1;
 var userSatisfaction = ["./../imgs/homeb0.png", './../imgs/homeb2.png', './../imgs/homeb3.png', './../imgs/homeb4.png'];
+var questionAnswers = [0,0,0,0];
 function changeCharTemp() {
    total -=prev;
    prev  = Number(document.querySelector('input[name = "exampleRadios"]:checked').value);
