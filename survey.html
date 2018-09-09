@@ -15,32 +15,34 @@
 
 <body>
     <nav class="navbar navbar-expand-md">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto" id="back-navBtn">
-                <li class="nav-item active" style = "font-family: Arial">
-                    <a class="nav-link" href="#" id="back-navBtn">Back</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">Home Depot</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="nav nav-tabs navbar-nav mr-auto" id="back-navBtn">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="back-navBtn">Back</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Home Depot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="nav nav-tabs navbar-nav ml-auto">
+            <li class="nav-item" id="survey-navBtn">
+                <a class="nav-link" href="#">Survey</a>
+            </li>
+            <li class="nav nav-item" id="coupons-navBtn">
+                <a class="nav-link" href="#">Coupons</a>
+            </li>
+        </ul>
+        <a class="navbar-brand" id= "account-navBtn" href="#">
+            <button id="acct-pro">
+                <img src="imgs/homeb0.png" alt="Logo" style="width:60px;position:absolute;top:8px;right:13px;clip: rect(0px,60px,48px,2px)">
             </button>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item" id="survey-navBtn">
-                    <a class="nav-link" href="#">Survey</a>
-                </li>
-                <li class="nav-item" id="coupons-navBtn">
-                    <a class="nav-link" href="#">Coupons</a>
-                </li>
-            </ul>
-            <a class="navbar-brand" id="account-navBtn" href="#">
-                <img src="" alt="Logo" style="width:40px;">
-            </a>
-        </div>
+        </a>
+    </div>
     </nav>
     </br>
     <div class="row">
@@ -48,16 +50,27 @@
             <div class="row">
                 <div class="col-sm-12">
                   <h4>How satisfied were you with the time it took to checkout?</h4>
-                  <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                   <div class="form-check form-check-inline">
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q1" id="radio1" value="1" checked>
+                </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q1" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q1" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q1" id="radio4" value="4">
+              </label>
                    <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q1" id="radio4" value="4">
+               </label>
+                   <br>                   <br>
 
                 </div>
                 </br>
@@ -66,15 +79,26 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4>How satisfied were you with the time spent in the store overall?</h4>
-                   <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                    <div class="form-check form-check-inline">
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q2" id="radio1" value="1" checked>
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q2" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q2" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q2" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q2" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
@@ -84,14 +108,25 @@
                 <div class="col-sm-12">
                     <h4>How knowledgeable were the employees on the products, where they are located, etc?</h4>
                     <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q3" id="radio1" value="1" checked>
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q3" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q3" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q3" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q3" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
@@ -100,15 +135,26 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4>How satisfied were you with the quality of the customer service?</h4>
-                    <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                     <div class="form-check form-check-inline">
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q4 id="radio1" value="1" checked>
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q4" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q4" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q4" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q4" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
@@ -117,15 +163,26 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4>How satisfied are you with the quality of the product(s) you purchased?</h4>
-                    <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                     <div class="form-check form-check-inline">
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q5" id="radio1" value="1" checked>
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q5" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q5" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q5" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q5" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
@@ -135,14 +192,25 @@
                 <div class="col-sm-12">
                     <h4>How fair are the prices?</h4>
                     <div class="form-check form-check-inline">
-
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q6" id="radio1" value="1" checked>
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q6" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q6" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q6" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q6" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
@@ -152,13 +220,26 @@
                 <div class="col-sm-12">
                     <h4>How safe was the facility?</h4>
                     <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                    <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q7" id="radio1" value="1" checked>
+                  </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="2">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q7" id="radio2" value="2">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3">
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q7" id="radio3" value="3">
+              </label>
                   <br>
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="4">
+
+                  <label class="radio-btn">
+                  <input class="form-check-input" type="radio" name="q7" id="radio4" value="4">
+              </label>
+                   <br>
+                   <label class="radio-btn">
+                   <input class="form-check-input" type="radio" name="q7" id="radio4" value="4">
+               </label>
                    <br>
 
                 </div>
