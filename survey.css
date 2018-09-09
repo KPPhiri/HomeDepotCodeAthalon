@@ -1,3 +1,26 @@
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 580px;
+  left: calc(50% - 580px/2);
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 580px;
+  height: 8px;
+  background: #EDE5DF;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #97D687;
+  width: 0%;
+}
+
 .maxl{
   margin:25px ;
 }
@@ -145,8 +168,14 @@ span {
 .bubble {
     position: absolute;
     right:225px;
-    top: 480px;
+    top: 550px;
     visibility: hidden;
+}
+.btn-talk {
+    position: absolute;
+    background-color: #97D687;
+    bottom:10px;
+    right: 10px;
 }
 .tiny-speech-bubble {
 	position: relative;

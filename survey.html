@@ -56,6 +56,13 @@
     </nav>
     </br>
 
+    <div class="header justify-content-center">
+        <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+
+  </div>
+</div>
+
     <div class="outer-r row">
         <div class="left-side col-8">
             <div class="row">
@@ -273,6 +280,7 @@
                     <div class="bubble">
                         <hgroup class="speech-bubble">
                             <p>I am...</p>
+                            <button class="btn btn-talk">Enter</button>
                         </hgroup>
                     </div>
                     </hgroup>
@@ -291,5 +299,21 @@
             </div>
 </body>
 <script src="scripts/survey.js "></script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $(".form-check").css("opacity", 1 - $(window).scrollTop() / $('.form-check').height());
+    });
+});
+</script>
 
 </html>
