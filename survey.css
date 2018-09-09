@@ -104,3 +104,10 @@ h4 {
     -o-transform: translate(350px,0); /** Opera **/
     -moz-transform: translate(350px,0); /** Firefox **/
 } */
+.radio-btn {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform:scale(2);
+}
