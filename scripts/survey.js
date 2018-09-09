@@ -34,6 +34,7 @@ function addRadioBtnListeners1(q) {
         console.log("TOTAL IS: " + total);
       }
       console.log("total: " + total + " nonZero: " + nonZero + " index: " + parseInt(((total/nonZero)), 10));
+      console.log("IMAGE IS: " + document.querySelector('#char'));
       document.querySelector('#char').src = userSatisfaction[parseInt(((total/nonZero))-1, 10)]
       }
     }
