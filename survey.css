@@ -60,21 +60,29 @@
   -webkit-border-radius:100%;
 }
 
-
-
-
-
 h4 {
     font-size: 20px;
+    background-color: rgba(71, 71, 71, 0.1);
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px #CACACA;
+    padding: 4px;
+}
+span {
+    font-family: serif;
 }
 .left-side {
     background: #FDF1E9;
-    padding: 10px;
+    padding: 12px;
+    padding-bottom: 20px;
     margin-left: 30px;
     margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #EDE5DF;
 }
 .btn-submit {
     background-color: #CC9979;
+    margin-top: 20px;
 }
 .giftBox {
     position: absolute;
