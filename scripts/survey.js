@@ -55,6 +55,10 @@ function addRadioBtnListeners1(q) {
       window.location.href = 'coupons.html';
    });
 
+    document.querySelector('#enter').addEventListener('click', ()=> {
+          document.querySelector('.bubble').style.visibility = "hidden";
+   });
+
     document.querySelector('.tiny-bubble').addEventListener('click', ()=> {
       if(document.querySelector('.bubble').style.visibility == "visible") {
             document.querySelector('.bubble').style.visibility = "hidden";
@@ -65,9 +69,6 @@ function addRadioBtnListeners1(q) {
       }
 
    });
-
-
-
 
 
 
